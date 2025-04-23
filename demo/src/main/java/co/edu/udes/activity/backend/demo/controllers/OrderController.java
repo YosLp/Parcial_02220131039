@@ -1,10 +1,10 @@
 package com.example.ordermanagement.controllers;
 
-import com.example.ordermanagement.dtos.OrderDTO;
-import com.example.ordermanagement.dtos.OrderItemDTO;
-import com.example.ordermanagement.models.Order;
-import com.example.ordermanagement.models.OrderItem;
-import com.example.ordermanagement.services.OrderService;
+import co.edu.udes.activity.backend.demo.dto.OrderDTO;
+import co.edu.udes.activity.backend.demo.dto.OrderItemDTO;
+import co.edu.udes.activity.backend.demo.models.Order;
+import co.edu.udes.activity.backend.demo.models.OrderItem;
+import co.edu.udes.activity.backend.demo.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

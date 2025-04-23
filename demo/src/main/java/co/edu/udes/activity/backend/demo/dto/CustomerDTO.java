@@ -2,13 +2,10 @@ package co.edu.udes.activity.backend.demo.dto;
 
 import lombok.Data;
 
-
 @Data
-public class UserDTO {
+public class CustomerDTO {
     private Long id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private String email;
     private Boolean status;
-    private String roleName;
 }

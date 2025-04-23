@@ -1,7 +1,7 @@
 package co.edu.udes.activity.backend.demo.services;
 
-import com.example.ordermanagement.models.OrderItem;
-import com.example.ordermanagement.repositories.OrderItemRepository;
+import co.edu.udes.activity.backend.demo.models.OrderItem;
+import co.edu.udes.activity.backend.demo.repositories.OrderItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

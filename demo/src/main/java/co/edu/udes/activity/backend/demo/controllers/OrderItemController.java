@@ -1,8 +1,8 @@
 package co.edu.udes.activity.backend.demo.controllers;
 
-import com.example.ordermanagement.dtos.OrderItemDTO;
-import com.example.ordermanagement.models.OrderItem;
-import com.example.ordermanagement.services.OrderItemService;
+import co.edu.udes.activity.backend.demo.dto.OrderItemDTO;
+import co.edu.udes.activity.backend.demo.models.OrderItem;
+import co.edu.udes.activity.backend.demo.services.OrderItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

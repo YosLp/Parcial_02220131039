@@ -1,7 +1,13 @@
 package co.edu.udes.activity.backend.demo.services;
 
-import com.example.ordermanagement.models.*;
-import com.example.ordermanagement.repositories.*;
+import co.edu.udes.activity.backend.demo.models.Customer;
+import co.edu.udes.activity.backend.demo.models.Product;
+import co.edu.udes.activity.backend.demo.models.Order;
+import co.edu.udes.activity.backend.demo.models.OrderItem;
+import co.edu.udes.activity.backend.demo.repositories.CustomerRepository;
+import co.edu.udes.activity.backend.demo.repositories.ProductRepository;
+import co.edu.udes.activity.backend.demo.repositories.OrderItemRepository;
+import co.edu.udes.activity.backend.demo.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -87,6 +93,5 @@ public class OrderService {
                 .filter(o -> o.getOrderDate().isAfter(LocalDateTime.now().minusDays(days)))
                 .toList();
     }
-
 }
 

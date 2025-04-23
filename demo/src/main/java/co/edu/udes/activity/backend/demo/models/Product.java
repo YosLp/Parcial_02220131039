@@ -11,23 +11,19 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id; 
 
     @Column(name = "name")
     private String name;
 
     @Column(name = "price")
-    private double price;
+    private Double price;
 
     @Column(name = "status")
     private Boolean status;
 
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderItem> orderItems;
 
     public Product() {}
 }
-
-
-
-
